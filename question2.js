@@ -1,14 +1,19 @@
 
-function runQ2() {
+function runQ2() 
+{
     var N    = parseInt(prompt("Enter N:"));
     var seed = parseInt(prompt("Enter seed:"));
 
     var current = N;
 
-    for (var i = 0; i < 3; i++) {
-        if (current % 2 === 0) {
+    for (var i = 0; i < 3; i++) 
+    {
+        if (current % 2 === 0) 
+        {
             current = current / 2 + seed;
-        } else {
+        } 
+        else 
+        {
             current = current * 3 - seed;
         }
     }
@@ -19,9 +24,12 @@ function runQ2() {
     var middleDigit = parseInt(s.charAt(1));
     var middleMatches = (middleDigit === seed);
 
-    if (isThreeDigit && middleMatches) {
+    if (isThreeDigit && middleMatches) 
+    {
         alert("YES, " + current);
-    } else {
+    } 
+    else 
+    {
         alert("NO, " + current);
     }
 }
